@@ -1,0 +1,24 @@
+.input-container{
+  max-width: 1200px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  .message-input{
+    display: block;
+    width: calc(100% - 150px);
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    padding: 2px 20px;
+  }
+  .btn-send{
+    width: 120px;
+    margin-left: 30px;
+    border-radius: 25px;
+    display: block;
+    background: blue;
+    color: white;
+    border: none;
+  }
+}

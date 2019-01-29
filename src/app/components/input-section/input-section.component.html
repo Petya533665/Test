@@ -1,0 +1,4 @@
+<div class="input-container">
+  <input class="message-input" type="text" (keyup.enter)="submit()" [(ngModel)]="text">
+  <input class="btn-send g-btn" type="button" (click)="submit()" value="SEND" [disabled]="text === ''">
+</div>

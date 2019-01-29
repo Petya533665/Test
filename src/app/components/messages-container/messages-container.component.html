@@ -1,0 +1,16 @@
+<div class="conversations-body">
+  <div class="messages-container" *ngFor="let message of messages; let i = index">
+    <div class="messages-item" [class.right-side]="message.owner.id == user.id">
+      <div class="avatar" [ngStyle]="{'background-image': 'url(' + message.owner.logo + ')'}"></div>
+      <div class="message">
+        <p class="info">
+          <span>{{message.owner.name}}</span>
+          <span>{{message.date | date: 'HH:mm'}}</span>
+        </p>
+        <p>
+          {{message.text}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

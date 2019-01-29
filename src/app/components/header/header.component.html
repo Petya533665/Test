@@ -1,0 +1,8 @@
+<div class="header">
+  <div class="user-details">
+    <div  class="logo" [ngStyle]="{'background-image': 'url(' + user.logo + ')'}" alt="logo"></div>
+    <p class="user-name">{{user.name}}</p>
+  </div>
+
+  <input class="btn-change" type="button" (click)="changeUser.emit()" value="Change User" >
+</div>

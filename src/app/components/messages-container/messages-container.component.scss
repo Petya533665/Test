@@ -1,0 +1,58 @@
+.conversations-body {
+  box-sizing: border-box;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 10px auto;
+  height: calc(100vh - 190px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  .messages-container {
+    margin: 10px 0;
+    .messages-date {
+      text-align: center;
+      margin: 20px 0;
+      color: rgba(61, 58, 58, 0.5);
+    }
+    .messages-item {
+      display: flex;
+      align-items: flex-start;
+      &.right-side {
+        flex-direction: row-reverse;
+        .avatar {
+          margin-left: 20px;
+          margin-right: 0;
+        }
+        .message{
+          background: #d9d9ff;
+        }
+      }
+    }
+    .avatar {
+      min-width: 35px;
+      max-width: 35px;
+      height: 35px;
+      margin-right: 20px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center center;
+    }
+    .message {
+      padding: 10px 25px;
+      border-radius: 18.5px;
+      background-color: #ffffff;
+      font-size: 16px;
+      color: #3d3a3a;
+      .info {
+        display: flex;
+        justify-content: space-between;
+        color: #a4a4a4;
+        font-size: 14px;
+        margin-bottom: 10px;
+        span:last-child {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}

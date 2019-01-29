@@ -1,0 +1,6 @@
+<rp-header [user]="currentUser$ | async" (changeUser)="changeUser()"></rp-header>
+
+<rp-messages-container [user]="currentUser$ | async" [messages]="messages$ | async"></rp-messages-container>
+
+<rp-input-section (addMessage)="addMessage($event)"></rp-input-section>
+
